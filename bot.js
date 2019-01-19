@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = ">;
 /////////////////////////
 ////////////////////////
 
@@ -118,7 +118,7 @@ client.on('message', async msg => {
 
 		if (!permissions.has('EMBED_LINKS')) {
 
-			return msg.channel.sendMessage("انا لا املك صلاحيات ارسال روابط")
+			return msg.channel.sendMessage("انا لا املك صلاحيةأرسال روابط");
 		}
 
 		if (url.match(/^https?:\/\/(www.youtube.com|youtube.com)\/playlist(.*)$/)) {
